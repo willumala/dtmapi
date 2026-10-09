@@ -10,14 +10,15 @@ Verified against the API portal:
 
 #: Gateway base URL per environment.
 HNA_BASE_URLS = {
-    "prod": "https://dtm-apim.iom.int/HNA/v1",
+    #"prod": "https://dtm-apim.iom.int/HNA/v1",
+    "prod": "https://dtmapi.iom.int/HNA/v1"
     "dev": "https://dtm-apim-dev.iom.int/HNA/v1",
 }
 
 #: Path segment for each endpoint, appended to the environment's base URL.
 HNA_ENDPOINT_PATHS = {
-    "countries": "CountryList",
-    "catalog": "HNADataCatalog",
+    "countries": "country-list",
+    "catalog": "catalog",
     "admin2": "admin2",
     "download": "download",
 }
